@@ -26,6 +26,7 @@
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #77a8d8 3px solid;
+            text-align: center; /* Alineación del contenido del header al centro */
         }
         header a {
             color: #fff;
@@ -53,7 +54,7 @@
             color: #000; /* Color de texto en negro */
         }
         .showcase img {
-            max-width: 200px; /* Tamaño de la imagen ajustado */
+            max-width: 100%;
             margin-right: 20px; /* Espacio entre imagen y texto */
             display: none; /* Ocultar imagen en dispositivos pequeños */
         }
@@ -62,12 +63,12 @@
             margin-left: auto;
         }
         .showcase h1 {
-            font-size: 30px; /* Tamaño del título ajustado */
+            font-size: 24px; /* Tamaño del título ajustado */
             margin-bottom: 10px;
             color: #000; /* Color de texto en negro */
         }
         .showcase p {
-            font-size: 18px;
+            font-size: 16px;
             color: #000; /* Color de texto en negro */
         }
         .content {
@@ -131,10 +132,10 @@
                 padding: 0 20px;
             }
             .showcase h1 {
-                font-size: 40px; /* Ajuste de tamaño para pantallas más grandes */
+                font-size: 32px; /* Ajuste de tamaño para pantallas más grandes */
             }
             .showcase p {
-                font-size: 20px; /* Ajuste de tamaño para pantallas más grandes */
+                font-size: 18px; /* Ajuste de tamaño para pantallas más grandes */
             }
             .showcase img {
                 display: inline-block; /* Mostrar imagen en pantallas más grandes */
@@ -145,22 +146,23 @@
 <body>
     <header>
         <div class="container">
-            <h1 style="font-size: 20px;">PICO Norte High Performance Training Camp</h1>
+            <h1>PICO Norte High Performance Training Camp</h1>
             <nav>
                 <ul>
-                    <li><a href="#objetivo" style="font-size: 14px;">Objetivo</a></li>
-                    <li><a href="#valores" style="font-size: 14px;">Valores</a></li>
-                    <li><a href="#enfoque" style="font-size: 14px;">Enfoque</a></li>
-                    <li><a href="#cronograma" style="font-size: 14px;">Cronograma</a></li>
-                    <li><a href="#registro" style="font-size: 14px;">Registro</a></li>
+                    <li><a href="#objetivo">Objetivo</a></li>
+                    <li><a href="#valores">Valores</a></li>
+                    <li><a href="#enfoque">Enfoque</a></li>
+                    <li><a href="#cronograma">Cronograma</a></li>
+                    <li><a href="#registro">Registro</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class="showcase">
+        <img src="campamento.jpg" alt="Imagen del campamento" style="max-width: 100%;">
         <div class="content">
-            <h1 style="color: black;">¡Únete al PICO Norte High Performance Training Camp!</h1>
-            <p style="color: black;">Fecha: Agosto | Lugar: Pico Norte, San Pedro y Nuevo Sur | Costo: $2,000 MXN</p>
+            <h1>¡Únete al PICO Norte High Performance Training Camp!</h1>
+            <p>Fecha: Agosto | Lugar: Pico Norte, San Pedro y Nuevo Sur | Costo: $2,000 MXN</p>
         </div>
     </section>
     <section class="content" id="objetivo">
@@ -222,5 +224,6 @@
         <div class="container">
             <h2>Registro</h2>
             <p>Para registrarte, por favor completa el siguiente formulario:</p>
-            <a href="https://forms.gle/registro">Formulario de Registro</a>
+            <a href="https://forms.gle
+
        

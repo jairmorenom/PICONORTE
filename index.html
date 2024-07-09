@@ -11,11 +11,11 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #000; /* Fondo negro */
-            color: #fff; /* Texto blanco */
+            background-color: #fff;
+            color: #000;
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
             overflow: hidden;
         }
@@ -38,7 +38,7 @@
         }
         header li {
             display: inline;
-            padding: 0 20px 0 20px;
+            padding: 0 10px;
         }
         .showcase {
             min-height: 400px;
@@ -46,27 +46,29 @@
             align-items: center;
             justify-content: space-between;
             padding: 20px;
+            flex-wrap: wrap;
         }
         .showcase img {
-            max-width: 50%;
+            max-width: 100%;
             height: auto;
+            margin-bottom: 20px;
         }
         .showcase .content {
-            max-width: 50%;
+            max-width: 100%;
         }
         .showcase h1 {
-            font-size: 55px;
+            font-size: 40px;
             margin-bottom: 10px;
-            color: #000; /* Texto negro */
+            color: #000;
         }
         .showcase p {
-            font-size: 20px;
-            color: #000; /* Texto negro */
+            font-size: 18px;
+            color: #000;
         }
         .content {
             padding: 20px;
-            background: #fff;
-            color: #000; /* Texto negro en las secciones */
+            background: #f4f4f4;
+            color: #000;
         }
         .content h2, .content h3 {
             text-align: center;
@@ -103,6 +105,35 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
+        }
+        @media (min-width: 600px) {
+            .container {
+                width: 80%;
+            }
+            .showcase {
+                flex-wrap: nowrap;
+            }
+            .showcase img {
+                max-width: 50%;
+                margin-bottom: 0;
+            }
+            .showcase .content {
+                max-width: 50%;
+            }
+        }
+        @media (min-width: 768px) {
+            header ul {
+                float: right;
+            }
+            header li {
+                padding: 0 20px;
+            }
+            .showcase h1 {
+                font-size: 55px;
+            }
+            .showcase p {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -199,9 +230,10 @@
         </div>
     </section>
     <footer>
-        <p>PICO Norte High Performance Training Camp &copy; 2024</p>
+        <p>&copy; 2024 PICO Norte High Performance Training Camp. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
+
 
 

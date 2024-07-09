@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title style="font-size: 20px; text-align: center; color: black;"> Pico Norte 
-        High Performance Training Camp</title>
+    <title>PICO Norte High Performance Training Camp</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -14,7 +13,7 @@
             padding: 0;
             background-color: #fff;
             color: #000;
-            text-align: justify; /* Texto justificado */
+            text-align: center; /* Alineación del texto al centro */
         }
         .container {
             width: 90%;
@@ -27,13 +26,12 @@
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #77a8d8 3px solid;
-            text-align: center; /* Centrar el contenido del header */
         }
         header a {
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 14px; /* Tamaño de fuente ajustado para el menú */
+            font-size: 14px; /* Tamaño de fuente para el menú */
         }
         header ul {
             padding: 0;
@@ -52,11 +50,12 @@
             flex-wrap: wrap;
             background: url('campamento.jpg') no-repeat left;
             background-size: cover;
-            color: #fff;
+            color: #000; /* Color de texto en negro */
         }
         .showcase img {
-            max-width: 150px; /* Tamaño de la imagen ajustado */
+            max-width: 200px; /* Tamaño de la imagen ajustado */
             margin-right: 20px; /* Espacio entre imagen y texto */
+            display: none; /* Ocultar imagen en dispositivos pequeños */
         }
         .showcase .content {
             max-width: 100%;
@@ -65,16 +64,17 @@
         .showcase h1 {
             font-size: 30px; /* Tamaño del título ajustado */
             margin-bottom: 10px;
-            color: #fff;
+            color: #000; /* Color de texto en negro */
         }
         .showcase p {
             font-size: 18px;
-            color: #fff;
+            color: #000; /* Color de texto en negro */
         }
         .content {
             padding: 20px;
             background: #f4f4f4;
             color: #000;
+            text-align: justify; /* Texto justificado */
         }
         .content h2, .content h3 {
             text-align: center;
@@ -136,29 +136,31 @@
             .showcase p {
                 font-size: 20px; /* Ajuste de tamaño para pantallas más grandes */
             }
+            .showcase img {
+                display: inline-block; /* Mostrar imagen en pantallas más grandes */
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="campamento.jpg" alt="Imagen del campamento" style="max-width: 100px;">
-            <h1>PICO Norte High Performance Training Camp</h1>
+            <h1 style="font-size: 20px;">PICO Norte High Performance Training Camp</h1>
             <nav>
                 <ul>
-                    <li><a href="#objetivo">Objetivo</a></li>
-                    <li><a href="#valores">Valores</a></li>
-                    <li><a href="#enfoque">Enfoque</a></li>
-                    <li><a href="#cronograma">Cronograma</a></li>
-                    <li><a href="#registro">Registro</a></li>
+                    <li><a href="#objetivo" style="font-size: 14px;">Objetivo</a></li>
+                    <li><a href="#valores" style="font-size: 14px;">Valores</a></li>
+                    <li><a href="#enfoque" style="font-size: 14px;">Enfoque</a></li>
+                    <li><a href="#cronograma" style="font-size: 14px;">Cronograma</a></li>
+                    <li><a href="#registro" style="font-size: 14px;">Registro</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class="showcase">
         <div class="content">
-            <h1>¡Únete al PICO Norte High Performance Training Camp!</h1>
-            <p>Fecha: Agosto | Lugar: Pico Norte, San Pedro y Nuevo Sur | Costo: $2,000 MXN</p>
+            <h1 style="color: black;">¡Únete al PICO Norte High Performance Training Camp!</h1>
+            <p style="color: black;">Fecha: Agosto | Lugar: Pico Norte, San Pedro y Nuevo Sur | Costo: $2,000 MXN</p>
         </div>
     </section>
     <section class="content" id="objetivo">
@@ -221,14 +223,4 @@
             <h2>Registro</h2>
             <p>Para registrarte, por favor completa el siguiente formulario:</p>
             <a href="https://forms.gle/registro">Formulario de Registro</a>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2024 PICO Norte High Performance Training Camp. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
-
-
-
-
+       

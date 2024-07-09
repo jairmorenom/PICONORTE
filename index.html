@@ -13,6 +13,7 @@
             padding: 0;
             background-color: #fff;
             color: #000;
+            text-align: justify;
         }
         .container {
             width: 90%;
@@ -47,23 +48,25 @@
             justify-content: space-between;
             padding: 20px;
             flex-wrap: wrap;
+            background: url('campamento.jpg') no-repeat left;
+            background-size: cover;
+            color: #fff;
         }
         .showcase img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
+            display: none;
         }
         .showcase .content {
             max-width: 100%;
+            margin-left: auto;
         }
         .showcase h1 {
             font-size: 40px;
             margin-bottom: 10px;
-            color: #000;
+            color: #fff;
         }
         .showcase p {
             font-size: 18px;
-            color: #000;
+            color: #fff;
         }
         .content {
             padding: 20px;
@@ -113,12 +116,8 @@
             .showcase {
                 flex-wrap: nowrap;
             }
-            .showcase img {
-                max-width: 50%;
-                margin-bottom: 0;
-            }
             .showcase .content {
-                max-width: 50%;
+                max-width: 60%;
             }
         }
         @media (min-width: 768px) {
@@ -147,14 +146,12 @@
                     <li><a href="#valores">Valores</a></li>
                     <li><a href="#enfoque">Enfoque</a></li>
                     <li><a href="#cronograma">Cronograma</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
                     <li><a href="#registro">Registro</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class="showcase">
-        <img src="campamento.jpg" alt="Campamento de entrenamiento">
         <div class="content">
             <h1>¡Únete al PICO Norte High Performance Training Camp!</h1>
             <p>Fecha: Agosto | Lugar: Pico Norte, San Pedro y Nuevo Sur | Costo: $2,000 MXN</p>
@@ -215,13 +212,6 @@
             </ul>
         </div>
     </section>
-    <section class="content" id="testimonios">
-        <div class="container">
-            <h2>Testimonios</h2>
-            <p>"El mejor campamento al que he asistido, me ayudó a mejorar mi rendimiento y me motivó a seguir adelante." - Atleta A</p>
-            <p>"Una experiencia increíble, los entrenadores son muy profesionales y el ambiente es muy motivador." - Atleta B</p>
-        </div>
-    </section>
     <section class="register" id="registro">
         <div class="container">
             <h2>Registro</h2>
@@ -234,6 +224,7 @@
     </footer>
 </body>
 </html>
+
 
 
 

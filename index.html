@@ -46,17 +46,12 @@
             min-height: 400px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             padding: 20px;
             flex-wrap: wrap;
             background: url('campamento.jpg') no-repeat center;
             background-size: cover;
             color: #000; /* Color de texto en negro */
-        }
-        .showcase img {
-            max-width: 100%;
-            margin: auto;
-            display: none; /* Ocultar imagen en dispositivos pequeños */
         }
         .showcase .content {
             max-width: 100%;
@@ -137,117 +132,108 @@
             .showcase p {
                 font-size: 1.5rem; /* Ajuste de tamaño para pantallas más grandes */
             }
-            .showcase img {
-                display: inline-block; /* Mostrar imagen en pantallas más grandes */
-            }
+        }
+        .highlight-box {
+            display: inline-block;
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .highlight-box p {
+            margin: 0;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .requirements {
+            text-align: left;
+        }
+        .requirements ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+        .schedule p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <header>
- <div style="text-align: center;">
-    <h1 style="margin: 0;">Pico Norte</h1>
-    <h2 style="margin: 0;">High Performance Training Camp</h2>
-</div>
-
-            <nav>
-                <ul>
-                    <li><a href="#objetivo">Objetivo</a></li>
-                    <li><a href="#valores">Valores</a></li>
-                    <li><a href="#enfoque">Enfoque</a></li>
-                    <li><a href="#cronograma">Cronograma</a></li>
-                    <li><a href="#proposito">Propósito</a></li>
-                    <li><a href="#registro">Registro</a></li>
-                </ul>
-            </nav>
+        <div style="text-align: center;">
+            <h1 style="margin: 0;">Pico Norte</h1>
+            <h2 style="margin: 0;">High Performance Training Camp</h2>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#objetivo">Objetivo</a></li>
+                <li><a href="#valores">Valores</a></li>
+                <li><a href="#enfoque">Enfoque</a></li>
+                <li><a href="#cronograma">Cronograma</a></li>
+                <li><a href="#proposito">Propósito</a></li>
+                <li><a href="#registro">Registro</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="showcase">
-        <img src="campamento.jpg" alt="Imagen del campamento" style="max-width: 50%;">
         <div class="content">
-            <div style="text-align: center;">
-                <h1 style="color: black;">¡Únete al Pico Norte High Performance Training Camp!</h1>
+            <h1 style="color: black;">¡Únete al Pico Norte High Performance Training Camp!</h1>
+            <div class="highlight-box">
+                <p class="underline">Lugar: Pico Norte</p>
+                <p class="underline">Fecha: 9, 10, 11 Agosto</p>
+                <p class="underline">Costo: $2,000 MXN</p>
             </div>
-  <div style="display: flex; justify-content: center; align-items: center; height: 100%; text-align: center;">
-    <div style="background-color: #f4f4f4; padding: 20px; border-radius: 10px; border: 1px solid #ccc; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
-        <p style="color: black;">
-            Lugar: Pico Norte <br>
-            Fecha: 9, 10, 11 Agosto <br>
-            Costo: $2,000 MXN
-        </p>
-    </div>
-</div>
-
-
+        </div>
     </section>
     <section class="content" id="objetivo">
         <div class="container">
             <h2>Objetivo</h2>
-            <p> Trabajaremos para motivar a las y los atletas, llevandolos más allá de sus capacidades, tanto mentales como físicas, con el objetivo de prepararlos para sus futuras competencias y proyectos personales.</p>
+            <p>Trabajaremos para motivar a las y los atletas, llevándolos más allá de sus capacidades, tanto mentales como físicas, con el objetivo de prepararlos para sus futuras competencias y proyectos personales.</p>
             <p>Estamos preparados para equiparte con las herramientas esenciales para competir al más alto nivel y construir las bases de un atleta de alto rendimiento.</p>
-            <p>
-                <strong>FORTALECERÁS TU:</strong>
-                <br>
-                <div style="display: flex; justify-content: center; align-items: center; height: 100%; text-align: center;">
-                    <div style="background-color: #f4f4f4; padding: 20px; border-radius: 10px; border: 1px solid #ccc; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
-                        <p style="color: black;">
-                <ul style="list-style-type: none; padding-left: 0;">
-                    <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Movimiento</li>
-                    <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Preparación mental</li>
-                    <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Técnica / Táctica</li>
-                    <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Lectura / Visualización</li>
-                </ul>
+            <p><strong>FORTALECERÁS TU:</strong></p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Movimiento</li>
+                <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Preparación mental</li>
+                <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Técnica / Táctica</li>
+                <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Lectura / Visualización</li>
+            </ul>
             <p>Con el objetivo de potenciar las habilidades de los atletas.</p>
-            <div style="display: flex; justify-content: center; align-items: center; height: 100%; text-align: center;">
-                <div style="background-color: #f4f4f4; padding: 20px; border-radius: 10px; border: 1px solid #ccc; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
-                    <p style="color: black;">
             <a href="https://forms.gle/registro" target="_blank">Formulario de Registro</a>
         </div>
     </section>
     <section class="content" id="valores">
-        <div class="container" style="text-align: center;">
-            <div style="display: flex; justify-content: center; align-items: center; height: 100%; text-align: center;">
-                <div style="background-color: #f4f4f4; padding: 20px; border-radius: 10px; border: 1px solid #ccc; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
-                    <p style="color: black;">
+        <div class="container">
             <h2>Valores del Campamento</h2>
             <ul style="list-style-type: none; padding-left: 0;">
-                <li style="text-align: left;">⭐ Superación Personal</li>
-                <li style="text-align: left;">⭐ Trabajo en Equipo</li>
-                <li style="text-align: left;">⭐ Disciplina y Perseverancia</li>
-                <li style="text-align: left;">⭐ Desarrollo de Habilidades</li>
-                <li style="text-align: left;">⭐ Confianza</li>
+                <li>⭐ Superación Personal</li>
+                <li>⭐ Trabajo en Equipo</li>
+                <li>⭐ Disciplina y Perseverancia</li>
+                <li>⭐ Desarrollo de Habilidades</li>
+                <li>⭐ Confianza</li>
             </ul>
         </div>
     </section>
     <section class="content" id="enfoque">
         <div class="container">
-            <div style="display: flex; justify-content: center; align-items: center; height: 100%; text-align: center;">
-                <div style="background-color: #f4f4f4; padding: 20px; border-radius: 10px; border: 1px solid #ccc; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
-                    <p style="color: black;">
-            <h2 style="text-align: center;">Requisitos</h2>
-            <p style="text-align: center;">Activamente compitiendo.</p>
-            <p style="text-align: center;">Interesado en competir.</p>
-            <p style="text-align: center;">V6+</p>
+            <h2>Requisitos</h2>
+            <div class="requirements">
+                <ul>
+                    <li>Activamente compitiendo.</li>
+                    <li>Interesado en competir.</li>
+                    <li>V6+</li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="content" id="cronograma">
         <div class="container">
-            <div style="display: flex; justify-content: center; align-items: center; height: 100%; text-align: center;">
-    <div style="background-color: #f4f4f4; padding: 20px; border-radius: 10px; border: 1px solid #ccc; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
-        <p style="color: black;">
             <h2>Cronograma</h2>
             <h3>Día 1: Viernes</h3>
-            <p>Ubicación:</p>
-            <ul style="list-style-type: none; padding-left: 0;">
-                <li><span style="font-size: 20px;">📍</span> Pico Norte / Nuevo Sur</li>
-                <p>Actividades:</p>
+            <div class="schedule">
+                <p><strong>Ubicación:</strong> Pico Norte / Nuevo Sur</p>
+                <p><strong>Actividades:</strong></p>
                 <ul style="list-style-type: none; padding-left: 0;">
-                    <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Presentación motivacional: "Entre Sueños y Realidades. Descubriendo mi potencial".</li>
-                    <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Dinámicas de integración: Icebreakers.</li>
-                    <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Establecer mentalidad e intenciones.</li>
-                </ul>
-            </ul>
-            <h
+                    <li><span style="color: green;">✓</span> Presentación motivacional: "Entre Sueños y Realidades. Descubriendo mi potencial".</li>
+                    <li
 
 
 

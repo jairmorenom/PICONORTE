@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pico Norte Training Camp</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -49,7 +48,6 @@
             justify-content: space-between;
             padding: 20px;
             flex-wrap: wrap;
-           
             background-size: cover;
             color: #000; /* Color de texto en negro */
         }
@@ -137,7 +135,24 @@
             transform: translateY(-50%);
             color: black;
         }
-        @media (min-width: 600px) {
+        .contact-box {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-box ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 0;
+        }
+        .contact-box ul li {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        @media (min-width: 768px) {
             .container {
                 width: 80%;
             }
@@ -147,8 +162,6 @@
             .showcase .content {
                 max-width: 60%;
             }
-        }
-        @media (min-width: 768px) {
             header ul {
                 float: right;
             }
@@ -164,35 +177,12 @@
             .showcase img {
                 display: inline-block; /* Mostrar imagen en pantallas más grandes */
             }
+            .contact-box {
+                width: 50%;
+                margin: auto;
+                text-align: left;
+            }
         }
-        .contact-box {
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact-box ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 0;
-}
-
-.contact-box ul li {
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-@media (min-width: 768px) {
-    .contact-box {
-        width: 50%;
-        margin: auto;
-        text-align: left;
-    }
-}
-
     </style>
 </head>
 <body>
@@ -207,25 +197,20 @@
                 <li><a href="#cronograma">Cronograma</a></li>
                 <li><a href="#proposito">Propósito</a></li>
                 <li><a href="#registro">Registro</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <section class="showcase">
         <div class="content">
-            <p style="text-align: center;">
-    <strong>¡Únete al Training Camp!</strong>
-</p>
+            <p><strong>¡Únete al Training Camp!</strong></p>
             <div class="highlight-box">
                 <p style="color: black;">
                     Lugar: Pico Norte <br>
                     Fecha: 9, 10, 11 Agosto <br>
                     Costo: $2,000 MXN
-            </div>
-             <div class="highlight-box">
-            </ul>
-            <p><a href="URL_DEL_FORMULARIO_DE_REGISTRO">Regístro</a></p>
-        </div>
                 </p>
+                <p><a href="URL_DEL_FORMULARIO_DE_REGISTRO">Regístro</a></p>
             </div>
         </div>
     </section>
@@ -242,6 +227,7 @@
                     <li style="text-align: left;"><strong>✓ Preparación mental</strong></li>
                     <li style="text-align: left;"><strong>✓ Técnica / Táctica</strong></li>
                     <li style="text-align: left;"><strong>✓ Lectura / Visualización</strong></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -264,19 +250,19 @@
             <h2>Requisitos</h2>
             <div class="highlight-box">
                 <ul class="custom-bullets">
-                    <li>Activamente compitiendo.</li></p>
-                    <li>Interesado en competir.</li></p>
+                    <li>Activamente compitiendo.</li>
+                    <li>Interesado en competir.</li>
                     <li>V6+</li>
                 </ul>
             </div>
         </div>
-<section class="content" id="cronograma">
-    <div class="container">
+    </section>
+    <section class="content" id="cronograma">
+        <div class="container">
             <h2>Cronograma</h2>
-             </div>
-        <div style="text-align: center; margin-top: 0;">
-            <div class="highlight-box">
-                <h3>Día 1: Viernes</h3>
+            <div style="text-align: center; margin-top: 0;">
+                <div class="highlight-box">
+                    <h3>Día 1: Viernes</h3>
                 </div>
                 <div style="padding: 10px; text-align: left;">
                     <p><span style="font-size: 20px;margin-top: 0;">📍</span> Pico Norte / Nuevo Sur</p>
@@ -286,83 +272,78 @@
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Dinámicas de integración</li>
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Establecer intenciones</li>
                     </ul>
-                </div> 
+                </div>
 
-
-            
-            <div class="highlight-box">
-                <h4>Dia 2: Sabado</h4>
-            </div>
-            <div style="padding: 10px; text-align: left;">
+                <div class="highlight-box">
+                    <h4>Día 2: Sábado</h4>
+                </div>
+                <div style="padding: 10px; text-align: left;">
                     <p><span style="font-size: 20px;margin-top: 0;">📍</span> Pico Norte / San Pedro</p>
                     <p><strong>Actividades:</strong></p>
                     <ul style="list-style-type: none; padding-left: 0; margin-top: 0;">
-                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Herrmientas Psicologicas</li>
-                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Herramientas Tecnico-Tacticas</li>
-                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Escalador analitico vs intiutivo</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Herramientas Psicológicas</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Herramientas Técnico-Tácticas</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Escalador analítico vs intuitivo</li>
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Estrategias 4x4 & Jam</li>
-                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> 100 variables, ¿Que es lo mejor?</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> 100 variables, ¿Qué es lo mejor?</li>
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> JAM</li>
                     </ul>
-                </div> 
+                </div>
 
-
-
-
-            
-             <div class="highlight-box">
-                <h4>Dia 3: Domingo</h4>
-            </div>
-            <div style="padding: 10px; text-align: left;">
+                <div class="highlight-box">
+                    <h4>Día 3: Domingo</h4>
+                </div>
+                <div style="padding: 10px; text-align: left;">
                     <p><span style="font-size: 20px;margin-top: 0;">📍</span> Pico Norte / Nuevo Sur</p>
                     <p><strong>Actividades:</strong></p>
                     <ul style="list-style-type: none; padding-left: 0; margin-top: 0;">
-                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Dialogo interno</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Diálogo interno</li>
                         <li style="margin-bottom: 5px;"><span style="color: red;"><strong>✓</strong></span> <strong>Simulación de competencia</strong></li>
-                        <li style="margin-bottom: 5px;"><span></span>*Intencion de los armadores</li>
-                        <li style="margin-bottom: 5px;"><span></span>*Recibir feedback</li>
-                        <li style="margin-bottom: 5px;"><span></span>*Probar / Ajustar</li>
+                        <li style="margin-bottom: 5px;"><span></span> *Intención de los armadores</li>
+                        <li style="margin-bottom: 5px;"><span></span> *Recibir feedback</li>
+                        <li style="margin-bottom: 5px;"><span></span> *Probar / Ajustar</li>
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> "Una competencia no te define"</li>
-                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Identificar areas de mejora</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Identificar áreas de mejora</li>
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Establecer metas a plazos</li>
                     </ul>
-                </div> 
-            
-            
-            
-            <section class="content" id="proposito">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="proposito">
         <div class="container">
             <h2>Propósito</h2>
             <div class="highlight-box">
-           <p style="text-align: justify;">
-    El deporte de la escalada es joven, está creciendo y evolucionando. Me apasiona asumir un papel activo en el futuro de la escalada, no solo como actividad recreativa, sino también como deporte y estilo de vida. Creo sinceramente que todas las personas tienen habilidades especiales ocultas que deben ser desarrolladas. Para mí ese es el secreto.
-</p>
-
+                <p style="text-align: justify;">
+                    El deporte de la escalada es joven, está creciendo y evolucionando. Me apasiona asumir un papel activo en el futuro de la escalada, no solo como actividad recreativa, sino también como deporte y estilo de vida. Creo sinceramente que todas las personas tienen habilidades especiales ocultas que deben ser desarrolladas. Para mí ese es el secreto.
+                </p>
+            </div>
         </div>
     </section>
     <section class="content" id="registro">
         <div class="container">
             <h2>Formulario de Registro</h2>
             <div class="highlight-box">
-             <p><a href="URL_DEL_FORMULARIO_DE_REGISTRO">Regístro</a></p>
-             </ul>
-               </div>
-            <section class="content" id="contacto">
-    <div class="container">
-        <h2>Contacto</h2>
-        <div class="contact-box">
-            <ul>
-                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/jairmorenom?igsh=ODBrNGQ1OHVsNGd3&utm_source=qr">jairmorenom</a></li>
-                <li><strong>Teléfono:</strong> <a href="tel:+524434486529">4434486529</a></li>
-                <li><strong>Email:</strong> <a href="mailto:jairmoreno9876@gmail.com" style="font-size: 12px;">jairmoreno9876@gmail.com</a></li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-    
+                <p><a href="URL_DEL_FORMULARIO_DE_REGISTRO">Regístro</a></p>
+            </div>
         </div>
     </section>
+    <section class="content" id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact-box">
+                <ul>
+                    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/jairmorenom?igsh=ODBrNGQ1OHVsNGd3&utm_source=qr">jairmorenom</a></li>
+                    <li><strong>Teléfono:</strong> <a href="tel:+524434486529">4434486529</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:jairmoreno9876@gmail.com" style="font-size: 12px;">jairmoreno9876@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Pico Norte Training Camp. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+
 

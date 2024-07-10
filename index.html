@@ -118,6 +118,25 @@
             padding: 10px;
             margin-top: 20px;
         }
+        .custom-bullets {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: center;
+        }
+        .custom-bullets li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .custom-bullets li:before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: black;
+        }
         @media (min-width: 600px) {
             .container {
                 width: 80%;
@@ -208,35 +227,33 @@
     <section class="content" id="requisitos">
         <div class="container">
             <h2>Requisitos</h2>
-                <div class="highlight-box">
-                     <p style="color: black; font-weight: bold; text-align: center;"> 
-                         <li>* Activamente compitiendo.</li>
-                         <li>* Interesado en competir.</li>
-                         <li>* V6+</li>
-                     </p>
-                    </ul>
-                </div>
-        </body>
+            <div class="highlight-box">
+                <ul class="custom-bullets">
+                    <li>Activamente compitiendo.</li>
+                    <li>Interesado en competir.</li>
+                    <li>V6+</li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="content" id="cronograma">
         <div class="container">
             <h2>Cronograma</h2>
-                <h3>Día 1: Viernes</h3>
-                <ul style="list-style-type: none; padding-left: 0;">
-                    <li><strong>• Ubicación:</li><strong>
-                    <li>Mañana: Actividades en Pico Norte</li>
-                    <li>Tarde: Sesiones de entrenamiento</li>
-                    <li>Noche: Actividades sociales y charlas motivacionales</li>
-                </ul>
-            </div>
+            <h3>Día 1: Viernes</h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><strong>• Ubicación:</strong></li>
+                <li>Mañana: Actividades en Pico Norte</li>
+                <li>Tarde: Sesiones de entrenamiento</li>
+                <li>Noche: Actividades sociales y charlas motivacionales</li>
+            </ul>
         </div>
     </section>
     <section class="content" id="proposito">
         <div class="container">
             <h2>Propósito</h2>
             <p>El deporte de la escalada es joven, está creciendo y evolucionando. Me apasiona asumir un papel activo en el futuro de la escalada, no solo como actividad recreativa, sino también como deporte y estilo de vida.</p>
-            <p>Creo sinceramente que todas las personas tienen habilidades especiales ocultas que deben ser desarrolladas. Para mí, el secreto
-
-
-
+            <p>Creo sinceramente que todas las personas tienen habilidades especiales ocultas que deben ser desarrolladas. Para mí, el secreto</p>
+        </div>
+    </section>
+</body>
+</html>

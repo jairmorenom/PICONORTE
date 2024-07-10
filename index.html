@@ -165,12 +165,40 @@
                 display: inline-block; /* Mostrar imagen en pantallas más grandes */
             }
         }
+        .contact-box {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-box ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.contact-box ul li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .contact-box {
+        width: 50%;
+        margin: auto;
+        text-align: left;
+    }
+}
+
     </style>
 </head>
 <body>
     <header>
         <h1>Pico Norte</h1>
-        <h2>Training Camp</h2>
+        <h2>High Performance Training Camp</h2>
         <nav>
             <ul>
                 <li><a href="#objetivo">Objetivo</a></li>
@@ -184,7 +212,7 @@
     </header>
     <section class="showcase">
         <div class="content">
-            <strong>¡Únete al High Performance Training Camp!</strong>
+            <strong>¡Únete al Training Camp!</strong>
             <div class="highlight-box">
                 <p style="color: black;">
                     Lugar: Pico Norte <br>
@@ -313,13 +341,19 @@
              <p><a href="URL_DEL_FORMULARIO_DE_REGISTRO">Regístro</a></p>
              </ul>
             
-            <p>Contacto:</p>
-            <ul style="list-style-type: none; padding-left: 0;">
-               
-                <li>IG: <a href="https://www.instagram.com/jairmorenom?igsh=ODBrNGQ1OHVsNGd3&utm_source=qr">jairmorenom</a></li>
-                <li>TEL: <a href="tel:+524434486529">4434486529</a></li>
-                <li>MAIL: <a href="mailto:jairmoreno9876@gmail.com">jairmoreno9876@gmail.com</a></li>
-    
+            <section class="content" id="contacto">
+    <div class="container">
+        <h2>Contacto</h2>
+        <div class="contact-box">
+            <ul>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/jairmorenom?igsh=ODBrNGQ1OHVsNGd3&utm_source=qr">jairmorenom</a></li>
+                <li><strong>Teléfono:</strong> <a href="tel:+524434486529">4434486529</a></li>
+                <li><strong>Email:</strong> <a href="mailto:jairmoreno9876@gmail.com">jairmoreno9876@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
     
         </div>
     </section>

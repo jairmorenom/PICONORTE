@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pico Norte Training Camp</title>
+    <title>Adamanta Training Camp</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #fff;
-            color: #000;
-            text-align: center; /* Alineación del texto al centro */
+            background-color: #300c9c; /* Tono morado fuerte */
+            color: #333; /* Color de texto gris oscuro */
+            text-align: center;
         }
         .container {
             width: 90%;
@@ -20,18 +20,36 @@
             overflow: hidden;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77a8d8 3px solid;
-            text-align: center; /* Alineación del contenido del header al centro */
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 20px;
         }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('ada.jpeg') no-repeat center center/cover;
+            background-position: center 25%; /* Ajusta la posición del fondo */
+            background-size: 100%; /* Ajusta el tamaño de la imagen */
+            opacity: 0.3; /* Ajusta la opacidad según sea necesario */
+            z-index: 0;
+        }
+
         header a {
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 14px; /* Tamaño de fuente para el menú */
+            font-size: 10px;
         }
         header ul {
             padding: 0;
@@ -49,31 +67,31 @@
             padding: 20px;
             flex-wrap: wrap;
             background-size: cover;
-            color: #000; /* Color de texto en negro */
+            color: #000;
         }
         .showcase img {
             max-width: 100%;
             margin: auto;
-            display: none; /* Ocultar imagen en dispositivos pequeños */
+            display: none;
         }
         .showcase .content {
             max-width: 100%;
             margin: auto;
         }
         .showcase h1 {
-            font-size: 2rem; /* Tamaño del título ajustado */
+            font-size: 2rem;
             margin-bottom: 10px;
-            color: #000; /* Color de texto en negro */
+            color: #000;
         }
         .showcase p {
             font-size: 1.2rem;
-            color: #000; /* Color de texto en negro */
+            color: #000;
         }
         .content {
             padding: 20px;
             background: #f4f4f4;
-            color: #000;
-            text-align: justify; /* Texto justificado */
+            color: #333;
+            text-align: justify;
         }
         .content h2, .content h3 {
             text-align: center;
@@ -96,7 +114,7 @@
             margin-bottom: 20px;
         }
         .highlight-box p {
-            color: black;
+            color: #333;
             margin: 0;
         }
         .highlight-box ul {
@@ -105,12 +123,8 @@
             text-align: left;
             margin-top: 10px;
         }
-        .highlight-box ul li {
-            text-align: left;
-            margin-bottom: 5px;
-        }
         footer {
-            background: #333;
+            background: #555;
             color: #fff;
             text-align: center;
             padding: 10px;
@@ -133,7 +147,7 @@
             left: 0;
             top: 50%;
             transform: translateY(-50%);
-            color: black;
+            color: #333;
         }
         .contact-box {
             background-color: #f4f4f4;
@@ -169,13 +183,13 @@
                 padding: 0 20px;
             }
             .showcase h1 {
-                font-size: 3rem; /* Ajuste de tamaño para pantallas más grandes */
+                font-size: 3rem;
             }
             .showcase p {
-                font-size: 1.5rem; /* Ajuste de tamaño para pantallas más grandes */
+                font-size: 1.5rem;
             }
             .showcase img {
-                display: inline-block; /* Mostrar imagen en pantallas más grandes */
+                display: inline-block;
             }
             .contact-box {
                 width: 50%;
@@ -186,32 +200,85 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Pico Norte</h1>
-        <h2>High Performance Training Camp</h2>
-        <nav>
-            <ul>
-                <li><a href="#objetivo">Objetivo</a></li>
-                <li><a href="#valores">Valores</a></li>
-                <li><a href="#requisitos">Enfoque</a></li>
-                <li><a href="#cronograma">Cronograma</a></li>
-                <li><a href="#proposito">Propósito</a></li>
-                <li><a href="#registro">Registro</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+
+ <header>
+    <div class="header-content">
+        <h1 style="font-weight: bold; font-size: 25px; color: black;">HIGH PERFORMANCE TRAINING CAMP</h1> 
+        <h2 style="font-weight: bold; font-size: 15px; color: black;text-decoration: underline;">"By Jair Moreno"</h2>
+        <h3 style="font-weight: bold; font-size: 15px; color: black; text-decoration: underline;">"Fecha: 9,10, 11 Agosto"</3>
+        
+    </div>
+</header>
+
+
+      
+        
+
+
+
+        
+        
+<style>
+    .nav-container {
+        background-color: rgba(211, 211, 211, 0.5); /* lightgray con 50% de opacidad */
+        padding: 10px; /* Espacio interno dentro de la caja */
+        border: 1px solid gray; /* Borde de la caja */
+        white-space: nowrap; /* Evita que haya saltos de línea */
+        overflow-x: auto; /* Agrega barras de desplazamiento horizontal si es necesario */
+    }
+
+    .nav-container ul {
+        list-style-type: none; /* Quitar los puntos de la lista */
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-container li {
+        display: inline-block; /* Para que los elementos estén en línea */
+        margin-right: 0px; /* Margen entre elementos */
+    }
+
+    .nav-container a {
+        color: black; /* Color del texto */
+        text-decoration: none; /* Quitar subrayado de los enlaces */
+        font-size: 10px; /* Tamaño de la fuente */
+        padding: 3px 8px; /* Espacio interno del enlace */
+    }
+</style>
+
+<div class="nav-container">
+    <ul>
+        <li><a href="#objetivo">Objetivo</a></li>
+        <li><a href="#valores">Valores</a></li>
+        <li><a href="#requisitos">Requisitos</a></li>
+        <li><a href="#cronograma">Cronograma</a></li>
+        <li><a href="#proposito">Propósito</a></li>
+        <li><a href="#registro">Registro</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+    </div>
+
+
+
+
+
+
+
+
+        
+        
     </header>
     <section class="showcase">
         <div class="content">
-            <p><strong>¡Únete al Training Camp!</strong></p>
+            <p style="text-align: center;"><strong>¡Únete al Training Camp!</strong></p>
             <div class="highlight-box">
-                <p style="color: black;">
-                    Lugar: Pico Norte <br>
-                    Fecha: 9, 10, 11 Agosto <br>
-                    Costo: $2,000 MXN
+                <p style="text-align: center; color: darkorange; text-decoration: underline;">
+                    Lugar: PICO NORTE MTY<br>                    
+                    Costo: $2,000 MXN<BR>
                 </p>
-                </div>
-                <div class="highlight-box">
+            </DIV>
+                <div class="highlight-box">     
                 <p><a href="https://forms.gle/6fGFNq3so37cJAHK6">Regístro</a></p>
             </div>
         </div>
@@ -219,16 +286,21 @@
     <section class="content" id="objetivo">
         <div class="container">
             <h2>Objetivo</h2>
-            <p>Trabajaremos para motivar a las y los atletas, llevándolos más allá de sus capacidades, tanto mentales como físicas, con el objetivo de prepararlos para sus futuras competencias y proyectos personales.</p>
-            <p>Estamos preparados para equiparte con las herramientas esenciales para competir al más alto nivel y construir las bases de un atleta de alto rendimiento.</p><br>
-            
-            <p style="color: black; font-weight: bold; text-align: center;">FORTALECERÁS TU:</p>
+            <div class="highlight-box">
+            <p style="text-align: justify; font-size: 15px;">
+                Trabajaremos para motivar a las y los atletas, para potenciar y maximizar sus habilidades fisicas y mentales.<br><br>
+                Con el objetivo de prepararlos para sus futuras competencias, proyectos personales y sobretodo aportar valor a su desarrollo.<br><br>
+                Estamos preparados para equiparte con las herramientas esenciales para competir al más alto nivel y construir las bases de un atleta de alto rendimiento.
+</p>
+
+             </div>
+            <p style="color: black; font-weight: bold; text-align: center; font-size: 20px">Fortaleceras tu:</p>
             <div class="highlight-box" style="text-align: center;">
                 <ul style="list-style-type: none; padding-left: 0;">
                     <li style="text-align: left;"><strong>✓ Movimiento</strong></li>
                     <li style="text-align: left;"><strong>✓ Preparación mental</strong></li>
-                    <li style="text-align: left;"><strong>✓ Técnica / Táctica</strong></li>
-                    <li style="text-align: left;"><strong>✓ Lectura / Visualización</strong></li>
+                    <li style="text-align: left;"><strong>✓ Técnica / Táctica (B&L) </strong></li>
+                    <li style="text-align: left;"><strong>✓ Lectura / Visualización (B&L)</strong></li>
                 </ul>
             </div>
         </div>
@@ -238,10 +310,10 @@
             <h2>Valores</h2>
             <div class="highlight-box">
                 <ul>
-                    <li>⭐ Superación Personal</li>
-                    <li>⭐ Trabajo en Equipo</li>
                     <li>⭐ Disciplina y Perseverancia</li>
                     <li>⭐ Desarrollo de Habilidades</li>
+                    <li>⭐ Superación Personal</li>
+                    <li>⭐ Trabajo en Equipo</li>                   
                     <li>⭐ Confianza</li>
                 </ul>
             </div>
@@ -252,22 +324,32 @@
             <h2>Requisitos</h2>
             <div class="highlight-box">
                 <ul class="custom-bullets">
-                    <li>Activamente compitiendo.</li>
-                    <li>Interesado en competir.</li>
-                    <li>V6+</li>
+                    <li>Activamente compitiendo.</li><br>
+                    <li>Interesado en competir.</li><br>  
+                    <li>V6+</li><br>                      
+                    <li><strong>Nota:</strong> <a href="https://docs.google.com/spreadsheets/d/121tmjgRgRckks1PX-ijIA7wgDJQ6K93vA_pI4mbBSNM/edit?gid=0#gid=0" style="font-size: 15px;">Competencias</a></li>
                 </ul>
             </div>
         </div>
     </section>
     <section class="content" id="cronograma">
         <div class="container">
-            <h2>Cronograma</h2>
-            <div style="text-align: center; margin-top: 0;">
-                <div class="highlight-box">
-                    <h3>Día 1: Viernes</h3>
-                </div>
-                <div style="padding: 10px; text-align: left;">
-                    <p><span style="font-size: 20px;margin-top: 0;">📍</span> Pico Norte / Nuevo Sur</p>
+            
+        
+<div class="highlight-box" style="background-color: Plum; padding: 5px; margin-bottom: 5px;">
+    <ul style="list-style-type: none; padding: 0;">
+        <li><h3 style="margin-top: 0;">Día 1: Viernes</h3></li>
+        <li><p style="font-size: 10px; text-align: center; color: black ; margin-bottom: 5px;"><strong>4 horas</strong></p></li>
+    </ul>
+</div>
+
+
+                           <div style="padding: 5px; text-align: center;">
+                   <p style="font-size: 20px; margin-top: 0; text-decoration: underline;">
+    <span>📍</span> Pico Norte / Nuevo Sur (B)
+</p>
+
+                    
                     <p><strong>Actividades:</strong></p>
                     <ul style="list-style-type: none; padding-left: 0; margin-top: 0;">
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> "Entre Sueños y Realidades"</li>
@@ -276,74 +358,102 @@
                     </ul>
                 </div>
 
-                <div class="highlight-box">
-                    <h4>Día 2: Sábado</h4>
-                </div>
-                <div style="padding: 10px; text-align: left;">
-                    <p><span style="font-size: 20px;margin-top: 0;">📍</span> Pico Norte / San Pedro</p>
+
+                
+<div class="highlight-box" style="background-color: Plum; padding: 5px; margin-bottom: 5px;">
+    <ul style="list-style-type: none; padding: 0;">
+        <li><h3 style="margin-top: 0;">Día 2: Sabado</h3></li>
+        <li><p style="font-size: 10px; text-align: center; color: black; margin-bottom: 5px;"><strong>4 horas</strong></p></li>
+    </ul>
+</div>
+
+                                     <div style="padding: 5px; text-align: center;">
+                   <p style="font-size: 20px; margin-top: 0; text-decoration: underline;">
+    <span>📍</span> Pico Norte / San Pedro (B)
+</p>
+
+                       
                     <p><strong>Actividades:</strong></p>
                     <ul style="list-style-type: none; padding-left: 0; margin-top: 0;">
-                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Herramientas Psicológicas</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> 100 variables, ¿Qué es lo mejor?</li>
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Herramientas Técnico-Tácticas</li>
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Escalador analítico vs intuitivo</li>
+                    
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Herramientas Psicológicas</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Biblioteca de movimientos</li>
+                        
+                        
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Estrategias 4x4 & Jam</li>
-                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> 100 variables, ¿Qué es lo mejor?</li>
-                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> JAM</li>
+                        
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> JAM (1h)</li>
                     </ul>
                 </div>
+                    
+                <div class="highlight-box" style="background-color: Plum; padding: 5px; margin-bottom: 5px;">
+    <ul style="list-style-type: none; padding: 0;">
+        <li><h3 style="margin-top: 0;">Día 3: Domingo</h3></li>
+        <li><p style="font-size: 10px; text-align: center; color: black; margin-bottom: 5px;"><strong>4 horas</strong></p></li>
+    </ul>
+</div>
 
-                <div class="highlight-box">
-                    <h4>Día 3: Domingo</h4>
-                </div>
-                <div style="padding: 10px; text-align: left;">
-                    <p><span style="font-size: 20px;margin-top: 0;">📍</span> Pico Norte / Nuevo Sur</p>
+
+                    
+                 <div style="padding: 5px; text-align: center;">
+                   <p style="font-size: 20px; margin-top: 0; text-decoration: underline;">
+    <span>📍</span> Pico Norte / Nuevo Sur (B)
+</p>
+
                     <p><strong>Actividades:</strong></p>
                     <ul style="list-style-type: none; padding-left: 0; margin-top: 0;">
-                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Diálogo interno</li>
-                        <li style="margin-bottom: 5px;"><span style="color: red;"><strong>✓</strong></span> <strong>Simulación de competencia</strong></li>
-                        <li style="margin-bottom: 5px;"><span></span> *Intención de los armadores</li>
-                        <li style="margin-bottom: 5px;"><span></span> *Recibir feedback</li>
-                        <li style="margin-bottom: 5px;"><span></span> *Probar / Ajustar</li>
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> "Una competencia no te define"</li>
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Identificar áreas de mejora</li>
                         <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Establecer metas a plazos</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Diálogo interno</li>                     
+                        <li style="margin-bottom: 5px;"><span style="color: red;"><strong>✓</strong></span> <strong>Simulación de competencia IFSC (B:4X4)</strong></li>
+                        <li style="margin-bottom: 5px;"><span></span> *Intención de los armadores</li>
+                        <li style="margin-bottom: 5px;"><span></span> *Recibir feedback</li>
+                        <li style="margin-bottom: 5px;"><span></span> *Probar / Ajustar</li>
+                       
+                        
                     </ul>
                 </div>
             </div>
         </div>
-    </section>
+     </section>
     <section class="content" id="proposito">
         <div class="container">
             <h2>Propósito</h2>
             <div class="highlight-box">
-                <p style="text-align: justify;">
-                    El deporte de la escalada es joven, está creciendo y evolucionando. Me apasiona asumir un papel activo en el futuro de la escalada, no solo como actividad recreativa, sino también como deporte y estilo de vida. Creo sinceramente que todas las personas tienen habilidades especiales ocultas que deben ser desarrolladas. Para mí ese es el secreto.
+                <p style="text-align: justify;font-size: 14px;">
+                    El deporte de la escalada es joven, está creciendo y evolucionando. Me apasiona asumir un papel activo en el futuro de la escalada, no solo como actividad recreativa, sino también como deporte y estilo de vida.<br><br>
+                    Creo sinceramente que todas las personas tienen habilidades especiales ocultas que deben ser desarrolladas.<br><br>
+                    El trabajo colaborativo atletas-armadores cada vez juega un papel crucial en el desarrollo mutuo.
                 </p>
             </div>
         </div>
     </section>
     <section class="content" id="registro">
         <div class="container">
-            <h2>Formulario de Registro</h2>
-            <div class="highlight-box">
-                <p><a href="https://forms.gle/6fGFNq3so37cJAHK6">Regístro</a></p>
-            </div>
+            <h2>Formulario de registro</h2>
+              <div class="highlight-box">
+            <p><a href="https://forms.gle/6fGFNq3so37cJAHK6"><H3>Registro</H3></a></p>
         </div>
     </section>
     <section class="content" id="contacto">
         <div class="container">
             <h2>Contacto</h2>
             <div class="contact-box">
-                <ul>
-                    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/jairmorenom?igsh=ODBrNGQ1OHVsNGd3&utm_source=qr">jairmorenom</a></li>
-                    <li><strong>Teléfono:</strong> <a href="tel:+524434486529">4434486529</a></li>
-                    <li><strong>Email:</strong> <a href="mailto:jairmoreno9876@gmail.com" style="font-size: 12px;">jairmoreno9876@gmail.com</a></li>
-                </ul>
+               <ul style="text-align: center; list-style-type: none; padding: 0;">
+    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/jairmorenom?igsh=ODBrNGQ1OHVsNGd3&utm_source=qr">jairmorenom</a></li>
+    <li><strong>Teléfono:</strong> <a href="tel:+524434486529">4434486529</a></li>
+    <li><strong>Email:</strong> <a href="mailto:jairmoreno9876@gmail.com" style="font-size: 14px;">jairmoreno9876@gmail.com</a></li>
+</ul>
+
             </div>
         </div>
     </section>
     <footer>
-        <p>&copy; 2024 Pico Norte Training Camp. Todos los derechos reservados.</p>
+        <p>Jair Moreno &copy; 2024</p>
     </footer>
 </body>
 </html>
